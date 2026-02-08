@@ -1,36 +1,34 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🏥 HealthTrack Pro - Medical Dashboard
 
-## Getting Started
+HealthTrack Pro is a modern Patient Management Dashboard built for healthcare providers. This project demonstrates full-stack capabilities using **Next.js 15**, **PostgreSQL**, and **Prisma ORM**.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🚀 Tech Stack
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **Frontend:** Next.js 15 (App Router), Tailwind CSS
+- **Database:** PostgreSQL (via pgAdmin 4)
+- **ORM:** Prisma v6
+- **Server Logic:** Next.js Server Actions
+- **Deployment:** Ready for Vercel
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## ✨ Features
 
-## Learn More
+- **Real-time Dashboard:** Displays total patients and critical patient counts.
+- **Full CRUD Functionality:**
+  - **Create:** Register new patients via a responsive form.
+  - **Read:** Fetch and display patient records from PostgreSQL.
+  - **Delete:** Remove patient records with instant UI updates.
+- **Modern UI:** Professional sidebar layout with a clean, medical-themed design.
+- **Data Safety:** Integrated with Server Actions for secure database communication.
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🛠️ Installation & Setup
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. **Clone the repository:**
+   ```bash
+   git clone [https://github.com/sameera-kp/health-track-pro.git](https://github.com/sameera-kp/health-track-pro.git)
+   cd health-track-pro
