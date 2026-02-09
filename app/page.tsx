@@ -185,7 +185,7 @@ export default async function HealthDashboard() {
                       </td>
                     </tr>
                   ) : (
-                    patients.map((patient) => (
+                    patients.map((patient: any) => (
                       <tr
                         key={patient.id}
                         className="hover:bg-slate-50/80 transition-colors group"
