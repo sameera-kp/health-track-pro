@@ -1,6 +1,6 @@
 import { PrismaClient } from "@prisma/client";
 import { addPatient, deletePatient } from "./actions";
-import { Patient } from "@prisma/client";
+
 
 const prisma = new PrismaClient();
 
@@ -9,9 +9,7 @@ export default async function HealthDashboard() {
 
   // Quick Stats
   const totalPatients = patients.length;
-  const criticalCount = patients.filter((p: any) =>
-    p.blood_group?.includes("-"),
-  ).length;
+  const criticalCount = patients.filter((p: any) => p.blood_group?.includes('-')).length;
 
   return (
     <div className="flex min-h-screen bg-slate-50">
