@@ -1,14 +1,15 @@
 import { PrismaClient } from "@prisma/client";
 import { addPatient, deletePatient } from "./actions";
+import { Patient } from "@prisma/client";
 
 const prisma = new PrismaClient();
 
 export default async function HealthDashboard() {
   const patients = await prisma.patient.findMany();
-  
+
   // Quick Stats
   const totalPatients = patients.length;
-  const criticalCount = patients.filter(p => p.blood_group?.includes('-')).length;
+  const criticalCount = patients.filter((p: Patient) => p.blood_group?.includes('-')).length;
 
   return (
     <div className="flex min-h-screen bg-slate-50">
@@ -36,7 +37,7 @@ export default async function HealthDashboard() {
       {/* --- Main Content Area --- */}
       <main className="flex-1 overflow-y-auto">
         <div className="max-w-6xl mx-auto p-6 md:p-10">
-          
+
           {/* Header */}
           <header className="flex flex-col md:flex-row justify-between items-start md:items-center mb-8 gap-4">
             <div>
